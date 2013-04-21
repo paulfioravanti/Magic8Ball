@@ -1,6 +1,7 @@
 # Magic Eight Ball: A RubyMotion Example App
 
-The original code for this application is located [here](https://github.com/pragmaticstudio/studio-bonus-tracks/tree/master/episode-020/Magic8Ball).  After finishing the application, I used the following gems in an attempt to make the code look more Ruby-like, as well as assist in testing:
+The original code for this application is located [here](https://github.com/pragmaticstudio/studio-bonus-tracks/tree/master/episode-020/Magic8Ball).  
+After finishing the application, I used the following gems in an attempt to make the code look more Ruby-like, as well as assist in testing:
 
 - [BubbleWrap](https://github.com/rubymotion/BubbleWrap/tree/master/lib/bubble-wrap), in particular [the JSON APIs](https://github.com/rubymotion/BubbleWrap#json) and [UIView Wrappers](https://github.com/rubymotion/BubbleWrap#ui)
 - [SugarCube](https://github.com/rubymotion/sugarcube), in particular the syntactic sugar for [NSString handling](https://github.com/rubymotion/sugarcube#-nsstring) and [Symbol usage](https://github.com/rubymotion/sugarcube#-symbol)
@@ -18,7 +19,7 @@ To watch the original app being built incrementally, check out the
 2. Install [RubyMotion](http://www.rubymotion.com/)
 3. Run `rake` to build the project and run the app in the Simulator
 4. Run `rake spec` to run all the specs
-5. Run `rake device` to build the project and run the app on a provisioned iOS device
+5. Run `rake device` to build the project and run the app on a provisioned iOS device  
 Issues with setting up provisioning profiles? [This StackOverflow thread](http://stackoverflow.com/questions/13539743/rubymotion-build-error-cant-find-a-provisioning-profile-named-mixios-tea) assisted me.
 
 ## Credits
