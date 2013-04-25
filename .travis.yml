@@ -1,6 +1,6 @@
-rvm:
-  - 2.0.0
 language: objective-c
+# rvm:
+#   - 2.0.0
 before_install: ruby --version
 script:
   - rake spec
