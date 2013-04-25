@@ -1,4 +1,5 @@
 # Magic Eight Ball: A RubyMotion Example App
+[![Dependency Status](https://gemnasium.com/paulfioravanti/Magic8Ball.png)](https://gemnasium.com/paulfioravanti/Magic8Ball)
 
 The original code for this application is located [here](https://github.com/pragmaticstudio/studio-bonus-tracks/tree/master/episode-020/Magic8Ball).  
 After finishing the application, I used the following gems in an attempt to make the code look more Ruby-like, as well as assist in testing:
