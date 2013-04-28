@@ -3,7 +3,7 @@ GEM
   specs:
     bubble-wrap (1.1.5)
     motion-stump (0.2.1)
-    sugarcube (0.20.16)
+    sugarcube (0.20.17)
     teacup (1.3.3)
 
 PLATFORMS
@@ -12,5 +12,5 @@ PLATFORMS
 DEPENDENCIES
   bubble-wrap (= 1.1.5)
   motion-stump (= 0.2.1)
-  sugarcube (= 0.20.16)
+  sugarcube (= 0.20.17)
   teacup (= 1.3.3)
