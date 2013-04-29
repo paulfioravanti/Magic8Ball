@@ -5,12 +5,12 @@ Teacup::Stylesheet.new :main do
     width:           300,
     height:          80,
     text:            "Tap for Answer!",
-    textAlignment:   :center.uialignment,
+    textAlignment:   :center,
     font:            :bold.uifont(34),
-    textColor:       :darkgray.uicolor,
-    backgroundColor: :lightgray.uicolor
+    textColor:       :darkgray,
+    backgroundColor: :lightgray
 
   style :root,
-    image: 'background.png'.uiimage,
+    image: 'background.png',
     accessibilityLabel: 'screen'
 end
