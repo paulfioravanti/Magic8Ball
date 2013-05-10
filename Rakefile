@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
-require 'motion/project/template/ios'
-
+if ENV['TRAVIS']
+  require 'motion/project'
+else
+  require 'motion/project/template/ios'
+end
 require 'bundler'
 Bundler.require
 
