@@ -1,5 +1,5 @@
-describe "Magic 8Ball View Controller" do
-  tests Magic8BallViewController
+describe "Magic 8Ball Controller" do
+  tests Magic8BallController
 
   before { @message = "Tap for Answer!" }
 

@@ -1,4 +1,5 @@
 class Magic8Ball
+  include Magic8BallHelper
 
   attr_reader :answers
 
@@ -14,24 +15,13 @@ class Magic8Ball
 
     def load_answers
       begin
-        file = load_file
+        file = load_resource_file('answers.json')
         json = BW::JSON.parse(file)
         json['answers']
       rescue BW::JSON::ParserError => error
         $stderr.puts "Error: #{error.description}"
         default_answers
       end
-    end
-
-    def load_file
-      resource_file = "answers.json".resource
-      error = Pointer.new(:object)
-      file_contents =
-        NSData.alloc.initWithContentsOfFile(resource_file,
-                                            options: NSDataReadingUncached,
-                                            error: error)
-      raise ParserError, error[0] if error[0]
-      file_contents
     end
 
     def default_answers

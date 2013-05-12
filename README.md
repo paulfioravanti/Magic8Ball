@@ -2,12 +2,12 @@
 [![Build Status](https://secure.travis-ci.org/paulfioravanti/Magic8Ball.png)](http://travis-ci.org/paulfioravanti/Magic8Ball) [![Dependency Status](https://gemnasium.com/paulfioravanti/Magic8Ball.png)](https://gemnasium.com/paulfioravanti/Magic8Ball) [![Code Climate](https://codeclimate.com/github/paulfioravanti/Magic8Ball.png)](https://codeclimate.com/github/paulfioravanti/Magic8Ball)
 
 The original code for this application is located [here](https://github.com/pragmaticstudio/studio-bonus-tracks/tree/master/episode-020/Magic8Ball).  
-After finishing the application, I used the following gems in an attempt to make the code look more Ruby-like, as well as assist in testing:
+After finishing the application, I made some cosmetic changes and used the following gems in an attempt to make the code more Ruby/Rails-like:
 
 - [BubbleWrap](https://github.com/rubymotion/BubbleWrap/tree/master/lib/bubble-wrap), in particular [the JSON APIs](https://github.com/rubymotion/BubbleWrap#json) and [UIView Wrappers](https://github.com/rubymotion/BubbleWrap#ui)
 - [SugarCube](https://github.com/rubymotion/sugarcube), in particular the syntactic sugar for [NSString handling](https://github.com/rubymotion/sugarcube#-nsstring) and [Symbol usage](https://github.com/rubymotion/sugarcube#-symbol)
-- [Teacup](https://github.com/rubymotion/teacup) for [layout styling](https://github.com/rubymotion/teacup#stylesheets)
-- [motion-stump](https://github.com/siuying/motion-stump) for [method stubbing](https://github.com/siuying/motion-stump#stubbing-right-on-the-object) in tests
+- [Teacup](https://github.com/rubymotion/teacup) and [sweettea](https://github.com/colinta/sweettea) for [layout styling](https://github.com/rubymotion/teacup#stylesheets)
+- [motion-stump](https://github.com/siuying/motion-stump) for [method stubbing](https://github.com/siuying/motion-stump#stubbing-right-on-the-object) in specs
 
 ## Screencast
 

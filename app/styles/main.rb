@@ -1,5 +1,5 @@
-Teacup::Stylesheet.new :main do
-  style :magic_8ball_message,
+Teacup::Stylesheet.new :magic_8ball do
+  style :message_label,
     top:             60,
     left:            10,
     width:           300,
@@ -10,7 +10,7 @@ Teacup::Stylesheet.new :main do
     textColor:       :darkgray,
     backgroundColor: :lightgray
 
-  style :root,
+  style :screen,
     image: 'background.png',
     accessibilityLabel: 'screen'
 end

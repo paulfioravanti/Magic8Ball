@@ -8,6 +8,6 @@ describe "Application 'Magic8Ball'" do
   end
 
   it "has a root view controller" do
-    @app.keyWindow.rootViewController.class.should == Magic8BallViewController
+    @app.keyWindow.rootViewController.class.should == Magic8BallController
   end
 end
