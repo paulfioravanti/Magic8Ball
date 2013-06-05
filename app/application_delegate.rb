@@ -1,8 +1,6 @@
 class ApplicationDelegate
   include AppDelegateHelper
 
-  attr_reader :window
-
   def initialize
     return true if RUBYMOTION_ENV == 'test'
     @window = ApplicationWindow.new
