@@ -5,8 +5,8 @@ module UIWindowHelper
 
   def init; initialize; end
 
-  def device_screen_bounds
-    UIScreen.mainScreen.bounds
+  def root_view_controller
+    self.rootViewController
   end
 
   def root_view_controller=(controller)
@@ -15,5 +15,9 @@ module UIWindowHelper
 
   def initialize_with_frame(boundaries)
     initWithFrame(boundaries)
+  end
+
+  def device_screen_bounds
+    UIScreen.mainScreen.bounds
   end
 end

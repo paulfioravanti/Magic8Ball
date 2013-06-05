@@ -10,7 +10,7 @@ describe "Magic8Ball" do
   describe "answers" do
     describe "when json loaded correctly" do
       it "contains the full answer set when answers loaded" do
-        @magic_8ball.answers.should == full_answer_set
+        @magic_8ball.answers.should.equal(full_answer_set)
       end
     end
 
@@ -21,7 +21,7 @@ describe "Magic8Ball" do
       end
 
       it "contains the default answer set when answers not loaded" do
-        @magic_8ball.answers.should == default_answer_set
+        @magic_8ball.answers.should.equal(default_answer_set)
       end
     end
   end

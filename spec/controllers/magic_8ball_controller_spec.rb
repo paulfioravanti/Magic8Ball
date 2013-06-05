@@ -10,7 +10,7 @@ describe "Magic 8Ball Controller" do
 
     it "asks me to 'Tap for Answer!'" do
       view(@message).should.not.be.nil
-      controller.message_label.text.should == "Tap for Answer!"
+      controller.message_label.text.should.equal("Tap for Answer!")
     end
   end
 
@@ -23,8 +23,8 @@ describe "Magic 8Ball Controller" do
 
     it "removes the current message and displays and new message" do
       view(@new_message).should.not.be.nil
-      controller.message_label.text.should == @new_message
-      controller.message_label.text.should.not == @message
+      controller.message_label.text.should.equal(@new_message)
+      controller.message_label.text.should.not.equal(@message)
     end
   end
 end

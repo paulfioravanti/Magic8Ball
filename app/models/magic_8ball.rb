@@ -19,7 +19,9 @@ class Magic8Ball
         json = BW::JSON.parse(file)
         json['answers']
       rescue BW::JSON::ParserError => error
-        $stderr.puts "Error: #{error.description}"
+        unless RUBYMOTION_ENV == 'test'
+          $stderr.puts "Error: #{error.description}"
+        end
         default_answers
       end
     end

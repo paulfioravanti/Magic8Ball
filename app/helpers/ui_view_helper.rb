@@ -1,12 +1,11 @@
 module UIViewHelper
-
   def self.included(base)
     base.send :alias_method, :add_subview, :addSubview
   end
 
   def init
     super
-    initialize if self.class.method_defined?(:initialize)
+    initialize
     self
   end
 

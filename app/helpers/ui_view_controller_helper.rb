@@ -1,13 +1,16 @@
 module UIViewControllerHelper
-
   def init
     super
-    initialize if self.class.method_defined?(:initialize)
+    initialize
     self
   end
 
   def loadView
-    self.class.method_defined?(:root_view) ? root_view : super
+    respond_to?(:root_view) ? root_view : super
+  end
+
+  def viewDidLoad
+    respond_to?(:sub_views) ? sub_views : super
   end
 
   private
