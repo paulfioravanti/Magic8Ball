@@ -10,4 +10,5 @@ Motion::Project::App.setup do |app|
   app.name = 'Magic 8-Ball'
   app.icons << 'icon.png'
   app.delegate_class = 'ApplicationDelegate'
+  app.redgreen_style = :full
 end

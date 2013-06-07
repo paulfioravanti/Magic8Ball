@@ -1,5 +1,5 @@
 module UIScreenHelper
-  def device_screen_bounds
-    UIScreen.mainScreen.bounds
+  class << UIScreen
+    alias_method :main_screen, :mainScreen
   end
 end
