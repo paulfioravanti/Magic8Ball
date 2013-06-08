@@ -20,8 +20,8 @@ class Magic8BallController < UIViewController
   private
 
     def show_answer
-      animate_with_duration(1.0,
-        scale_and_fade_out, scale_and_fade_in_new_answer)
+      Magic8BallImageView.animate(1.0, scale_and_fade_out,
+        scale_and_fade_in_new_answer)
     end
 
     def scale_and_fade_out
@@ -34,14 +34,14 @@ class Magic8BallController < UIViewController
     def scale_and_fade_in_new_answer
       lambda do |finished|
         @message_label.text = @magic_8ball.random_answer
-        animate_with_duration(1.0, scale_and_fade_in)
+        Magic8BallImageView.animate(1.0, scale_and_fade_in)
       end
     end
 
     def scale_and_fade_in
       lambda do
         @message_label.make_visible
-        @message_label.scale_in
+        @message_label.reset_to_original_state
       end
     end
 end
