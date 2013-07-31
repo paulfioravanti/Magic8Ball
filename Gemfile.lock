@@ -2,7 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     bubble-wrap (1.3.0)
+    i18n (0.6.4)
+    motion-i18n (0.0.2)
+      i18n
+      motion-require
     motion-redgreen (0.1.0)
+    motion-require (0.0.7)
     motion-stump (0.3.0)
     rake (10.1.0)
     sugarcube (0.20.25)
@@ -10,15 +15,16 @@ GEM
       rake
       sugarcube
       teacup
-    teacup (2.1.1)
+    teacup (2.1.6)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bubble-wrap (= 1.3.0)
+  motion-i18n (= 0.0.2)
   motion-redgreen (= 0.1.0)
   motion-stump (= 0.3.0)
   sugarcube (= 0.20.25)
   sweettea (= 0.5.6)
-  teacup (= 2.1.1)
+  teacup (= 2.1.6)

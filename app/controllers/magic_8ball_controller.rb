@@ -11,7 +11,8 @@ class Magic8BallController < UIViewController
 
   layout :screen do
     @magic_8ball = Magic8Ball.new
-    @message_label = subview(Magic8BallMessageLabel, :message_label)
+    label = Magic8BallMessageLabel.new
+    @message_label = subview(label, :message_label)
     view.when_tapped do
       show_answer
     end

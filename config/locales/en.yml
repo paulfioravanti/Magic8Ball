@@ -1,0 +1,24 @@
+en:
+  messages:
+    tap_for_answer: "Tap for Answer!"
+  answers:
+    it_is_certain: "It is certain"
+    without_a_doubt: "Without a doubt"
+    definitely: "Definitely"
+    most_likely: "Most likely"
+    outlook_good: "Outlook good"
+    answer_yes: "Yes!"
+    try_again: "Try again"
+    reply_hazy: "Reply hazy"
+    cant_predict: "Can't predict"
+    answer_no: "No!"
+    unlikely: "Unlikely"
+    sources_say_no: "Sources say no"
+    very_doubtful: "Very doubtful"
+  default:
+    default_yes: "Yes"
+    default_no: "No"
+    maybe: "Maybe"
+    try_again: "Try Again"
+  errors:
+    parser_error: "Error: %{error}"

@@ -4,7 +4,7 @@ Teacup::Stylesheet.new :magic_8ball do
     left:            10,
     width:           300,
     height:          80,
-    text:            "Tap for Answer!",
+    text:            I18n.t('messages.tap_for_answer'),
     textAlignment:   :center,
     font:            :bold.uifont(34),
     textColor:       :darkgray,

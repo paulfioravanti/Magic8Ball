@@ -11,4 +11,5 @@ Motion::Project::App.setup do |app|
   app.icons << 'icon.png'
   app.delegate_class = 'ApplicationDelegate'
   app.redgreen_style = :full
+  # app.files_dependencies 'app/styles/magic_8ball_style.rb' => 'app/helpers/app_delegate_helper.rb'
 end

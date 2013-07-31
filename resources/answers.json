@@ -1,17 +1,17 @@
 {
   "answers": [
-    "It is certain",
-    "Without a doubt",
-    "Definitely",
-    "Most likely",
-    "Outlook good",
-    "Yes!",
-    "Try again",
-    "Reply hazy",
-    "Can't predict",
-    "No!",
-    "Unlikely",
-    "Sources say no",
-    "Very doubtful"
+    "answers.it_is_certain",
+    "answers.without_a_doubt",
+    "answers.definitely",
+    "answers.most_likely",
+    "answers.outlook_good",
+    "answers.answer_yes",
+    "answers.try_again",
+    "answers.reply_hazy",
+    "answers.cant_predict",
+    "answers.answer_no",
+    "answers.unlikely",
+    "answers.sources_say_no",
+    "answers.very_doubtful"
   ]
 }

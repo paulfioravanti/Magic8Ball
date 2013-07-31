@@ -17,17 +17,22 @@ class Magic8Ball
       begin
         file = load_resource_file('answers.json')
         json = BW::JSON.parse(file)
-        json['answers']
+        json['answers'].map { |string| I18n.t(string) }
       rescue BW::JSON::ParserError => error
         unless RUBYMOTION_ENV == 'test'
-          $stderr.puts "Error: #{error.description}"
+          $stderr.puts t('errors.parser_error', error: error.description)
         end
         default_answers
       end
     end
 
     def default_answers
-      ['Yes', 'No', 'Maybe', 'Try Again']
+      [
+        'default.default_yes',
+        'default.default_no',
+        'default.maybe',
+        'default.try_again'
+      ].map { |string| I18n.t(string) }
     end
 
 end

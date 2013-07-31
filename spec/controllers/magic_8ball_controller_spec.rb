@@ -1,7 +1,7 @@
 describe "Magic 8Ball Controller" do
   tests Magic8BallController
 
-  before { @message = "Tap for Answer!" }
+  before { @message = I18n.t('messages.tap_for_answer') }
 
   describe "initial state" do
     it "has a background image" do
@@ -10,7 +10,9 @@ describe "Magic 8Ball Controller" do
 
     it "asks me to 'Tap for Answer!'" do
       view(@message).should.not.be.nil
-      controller.message_label.text.should.equal("Tap for Answer!")
+      controller.message_label.text.should.equal(
+        I18n.t('messages.tap_for_answer')
+      )
     end
   end
 

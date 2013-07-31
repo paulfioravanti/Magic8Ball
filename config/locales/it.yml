@@ -1,0 +1,24 @@
+it:
+  messages:
+    tap_for_answer: "Tocca per risposta!"
+  answers:
+    it_is_certain: "È certo"
+    without_a_doubt: "Senza dubbio"
+    definitely: "Sicuramente"
+    most_likely: "Molto probabilmente"
+    outlook_good: "Prospettiva buono"
+    answer_yes: "Sì!"
+    try_again: "Riprova"
+    reply_hazy: "Rispondi confuso"
+    cant_predict: "Impossibile prevedere"
+    answer_no: "No!"
+    unlikely: "Improbabile"
+    sources_say_no: "Fonti dicono no"
+    very_doubtful: "Molto dubbia"
+  default:
+    default_yes: "Sì"
+    default_no: "No"
+    maybe: "Forse"
+    try_again: "Riprova"
+  errors:
+    parser_error: "Errore: %{error}"

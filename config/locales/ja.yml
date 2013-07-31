@@ -1,0 +1,24 @@
+ja:
+  messages:
+    tap_for_answer: "画面をタップ！"
+  answers:
+    it_is_certain: "確かに"
+    without_a_doubt: "疑問なし"
+    definitely: "絶対"
+    most_likely: "可能性が高い"
+    outlook_good: "見通しが良い"
+    answer_yes: "はい！"
+    try_again: "もう一度試して"
+    reply_hazy: "明確じゃない"
+    cant_predict: "予測できない"
+    answer_no: "いいえ！"
+    unlikely: "可能性が低い"
+    sources_say_no: "ノーです"
+    very_doubtful: "疑問あり"
+  default:
+    default_yes: "はい"
+    default_no: "いいえ"
+    maybe: "たぶん"
+    try_again: "もう一度試して"
+  errors:
+    parser_error: "エラー: %{error}"
