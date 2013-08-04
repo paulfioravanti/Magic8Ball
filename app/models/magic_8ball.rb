@@ -20,7 +20,7 @@ class Magic8Ball
         json['answers'].map { |string| I18n.t(string) }
       rescue BW::JSON::ParserError => error
         unless RUBYMOTION_ENV == 'test'
-          $stderr.puts t('errors.parser_error', error: error.description)
+          $stderr.puts I18n.t('errors.parser_error', error: error.description)
         end
         default_answers
       end
@@ -28,11 +28,11 @@ class Magic8Ball
 
     def default_answers
       [
-        'default.default_yes',
-        'default.default_no',
-        'default.maybe',
-        'default.try_again'
-      ].map { |string| I18n.t(string) }
+        I18n.t('default.default_yes'),
+        I18n.t('default.default_no'),
+        I18n.t('default.maybe'),
+        I18n.t('default.try_again')
+      ]
     end
 
 end
