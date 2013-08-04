@@ -19,7 +19,7 @@ GEM
       rake
       sugarcube
       teacup
-    teacup (2.1.6)
+    teacup (2.1.7)
     ya2yaml (0.31)
 
 PLATFORMS
@@ -33,4 +33,4 @@ DEPENDENCIES
   motion-stump (= 0.3.0)
   sugarcube (= 0.20.25)
   sweettea (= 0.5.6)
-  teacup (= 2.1.6)
+  teacup (= 2.1.7)
