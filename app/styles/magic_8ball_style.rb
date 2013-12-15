@@ -7,8 +7,8 @@ Teacup::Stylesheet.new :magic_8ball do
     text:            I18n.t('messages.tap_for_answer'),
     textAlignment:   :center,
     font:            :bold.uifont(34),
-    textColor:       :darkgray,
-    backgroundColor: :lightgray
+    textColor:       :dark_gray,
+    backgroundColor: :light_gray
 
   style :screen,
     image: 'background.png',
