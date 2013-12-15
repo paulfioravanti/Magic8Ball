@@ -53,3 +53,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </a>
 
 [![endorse](http://api.coderwall.com/pfioravanti/endorsecount.png)](http://coderwall.com/pfioravanti)
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paulfioravanti/magic8ball/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
