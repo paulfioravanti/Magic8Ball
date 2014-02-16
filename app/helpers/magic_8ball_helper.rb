@@ -3,7 +3,7 @@ module Magic8BallHelper
   private
 
     def load_resource_file(filename)
-      resource_file = filename.resource
+      resource_file = filename.resource_path
       error = Pointer.new(:object)
       file_contents = NSData.alloc.initWithContentsOfFile(resource_file,
                         options: NSDataReadingUncached, error: error)
