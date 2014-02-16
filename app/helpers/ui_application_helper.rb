@@ -1,12 +1,14 @@
 module UIApplicationHelper
   def self.included(base)
-    # Shared application created by sharedApplication class method
-    # which calls UIApplicationMain function to return app instance,
-    # which we have no direct control over, so key_window alias
-    # needs to be patched directly on the returned UIApplication instance
+    # This is so we can use Application.application_instance in the specs
+    # (instead of UIApplication.sharedApplication) and give the instance,
+    # as well as its window, camelised method names.
     base.send :define_singleton_method, :application_instance do
       application = self.sharedApplication
       application.class.send(:alias_method, :key_window, :keyWindow)
+      application.key_window.class.send(:alias_method,
+        :root_view_controller, :rootViewController
+      )
       application
     end
   end
