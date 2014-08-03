@@ -5,11 +5,13 @@ class Magic8BallController < UIViewController
 
   stylesheet :magic_8ball
 
+  layout(:screen, {})
+
   def root_view
     self.view = Magic8BallImageView.new
   end
 
-  layout :screen do
+  def teacup_layout
     @magic_8ball = Magic8Ball.new
     label = Magic8BallMessageLabel.new
     @message_label = subview(label, :message_label)
