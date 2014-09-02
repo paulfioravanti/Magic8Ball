@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'motion-i18n', '0.0.2'
 gem 'i18n_tools', '0.1.6', :require => 'i18n_tools/tasks'
-gem 'bubble-wrap', '1.7.0'
+gem 'bubble-wrap', '1.7.1'
 gem 'sugarcube', '2.0.1', :require => 'sugarcube-classic'
 gem 'teacup', '3.0.0'
 gem 'sweettea', '0.6.0'
