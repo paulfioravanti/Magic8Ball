@@ -5,7 +5,7 @@ describe "Magic 8Ball Controller" do
 
   describe "initial state" do
     it "has a background image" do
-      controller.view.image.should.be.same_as background_image
+      controller.view.image.should.equal background_image
     end
 
     it "asks me to 'Tap for Answer!'" do
