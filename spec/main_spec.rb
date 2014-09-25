@@ -1,8 +1,8 @@
 describe "Application 'Magic8Ball'" do
   before { @app = Application.application_instance }
 
-  it "technically has two windows" do
-    @app.windows.size.should.equal(2) # not sure about the change in this test...
+  it "has one window" do
+    @app.windows.size.should.equal(1)
   end
 
   it "has a root view controller" do
